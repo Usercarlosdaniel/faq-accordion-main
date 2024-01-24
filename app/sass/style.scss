@@ -1,0 +1,23 @@
+@use 'abstracts/index' as *;
+@forward 'globals/index';
+@forward 'layout/index';
+@forward 'components/index';
+
+@media (max-width: 600px) {
+  body{
+    background: $light-pink url(../../../public/assets/img/background-pattern-mobile.svg) no-repeat;
+     background-size: 100%;
+  }
+
+  .container{
+    width: 24rem;
+    .faq-headline{
+        h1{
+          font-size: 2.5rem;
+        }
+    }
+    .btn{
+      text-align: left;
+    }
+  }
+}

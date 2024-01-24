@@ -1,0 +1,21 @@
+@use '../abstracts/index' as *;
+
+.btn {
+    width: 100%;
+    @include flexCenter(row);
+    justify-content: space-between;
+    font-weight: 600;
+    color: $dark-purple;
+    font-size: 1rem;
+    padding: 1rem;
+    background: $white;
+    border: none;
+    cursor: pointer;
+    border-bottom: 2px solid $light-pink;
+    &:hover {
+      color: $hover;
+    }
+    .icon-faq-minus {
+      display: none;
+    }
+  }
